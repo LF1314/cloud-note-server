@@ -23,6 +23,8 @@ app.use(session({
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.engine('html', require('ejs').__express)
+app.set('view engine', 'html')
 
 app.use(logger('dev'));
 app.use(express.json());
