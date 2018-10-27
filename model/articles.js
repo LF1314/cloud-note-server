@@ -1,6 +1,7 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema;
 var articlesSchema = new mongoose.Schema({
+    coverimg:String,
     title: String,
     content: String,
     contentext: String,
